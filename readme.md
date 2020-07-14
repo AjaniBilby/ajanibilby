@@ -1,1 +1,1 @@
-<iframe style="border: none; width: 100%" src="https://blog.ajanibilby.com/animation/dots/index.html"></iframe>
+Programming languages should be concise, explicit, and correct. However correct is always relative to what your goal is.
