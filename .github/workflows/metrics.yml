@@ -35,12 +35,12 @@ jobs:
           plugin_habits_from: 200
           plugin_habits_days: 14
           plugin_habits_facts: yes
-          plugin_habits_charts: yes
+          plugin_habits_charts: no
           plugin_habits_trim: yes
-          config_timezone: Australia/Sydney
+          config_timezone: Europe/Paris
 
           plugin_followup: yes
-          plugin_followup_sections: repositories, user
+          plugin_followup_sections: user
 
           plugin_projects: yes
           plugin_projects_limit: 4
