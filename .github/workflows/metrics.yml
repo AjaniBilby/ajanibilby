@@ -5,9 +5,8 @@ on:
     schedule:
       - cron: "0 2-23/4 * * *"
 jobs:
-  github-metrics-personal:
+  github-metrics:
     runs-on: ubuntu-latest
-    uses: lowlighter/metrics@v3.10
     steps:
       - name: Personal metrics
         if: ${{ success() || failure() }}
