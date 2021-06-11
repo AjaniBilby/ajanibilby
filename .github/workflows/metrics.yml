@@ -37,14 +37,10 @@ jobs:
           plugin_habits_facts: yes
           plugin_habits_charts: no
           plugin_habits_trim: yes
-          config_timezone: Europe/Paris
+          config_timezone: Australia/Sydney
 
           plugin_followup: yes
           plugin_followup_sections: user
-
-          plugin_projects: yes
-          plugin_projects_limit: 4
-          plugin_projects_descriptions: yes
 
           plugin_achievements: yes
           plugin_achievements_threshold: B
