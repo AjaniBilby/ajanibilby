@@ -1,4 +1,3 @@
-- uses: lowlighter/metrics@v3.10
 - on:
   push:
     branches: [ master ]
@@ -7,6 +6,7 @@
 - jobs:
   github-metrics-personal:
     runs-on: ubuntu-latest
+    uses: lowlighter/metrics@v3.10
     steps:
       - name: Personal metrics
         if: ${{ success() || failure() }}
