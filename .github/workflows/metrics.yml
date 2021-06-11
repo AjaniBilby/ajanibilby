@@ -1,9 +1,9 @@
 uses: lowlighter/metrics@v3.10
 on:
-	schedule:
-		- cron: $cron-daily
 	push:
 		branches: [ master ]
+		schedule:
+		- cron: "0 2-23/4 * * *"
 jobs:
 	github-metrics-personal:
 		runs-on: ubuntu-latest
