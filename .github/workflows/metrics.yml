@@ -2,8 +2,7 @@ name: metrics
 on:
   push:
     schedule:
-      -cron: "0 1 * * *"
-    workflow_dispatch:
+      -cron: "0 0 * * *"
     push:
       branches: ["master", "main"]
 jobs:
