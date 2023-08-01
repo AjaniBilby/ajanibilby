@@ -1,1 +1,1 @@
-![metrics](https://github.com/AjaniBilby/ajanibilby/blob/master/metrics.svg)
+![metrics](https://github.com/AjaniBilby/ajanibilby/blob/master/github-metrics.svg)
