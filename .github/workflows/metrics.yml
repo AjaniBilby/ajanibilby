@@ -1,55 +1,65 @@
-name: metrics
+# Visit https://github.com/lowlighter/metrics#-documentation for full reference
+name: Metrics
 on:
-  push:
-    schedule:
-      -cron: "0 0 * * *"
-    push:
-      branches: ["master", "main"]
+  # Schedule updates (each hour)
+  schedule: [{cron: "0 * * * *"}]
+  # Lines below let you run workflow manually and on each commit
+  workflow_dispatch:
+  push: {branches: ["master", "main"]}
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
-      - name: Personal metrics
-        if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@latest
+      - uses: lowlighter/metrics@latest
         with:
-          filename: metrics.svg
+          # Your GitHub token
+          # The following scopes are required:
+          #  - public_access (default scope)
+          # The following additional scopes may be required:
+          #  - read:org      (for organization related metrics)
+          #  - read:user     (for user related data)
+          #  - read:packages (for some packages related data)
+          #  - repo          (optional, if you want to include private repositories)
           token: ${{ secrets.METRICS_TOKEN }}
-          committer_token: ${{ secrets.GITHUB_TOKEN }}
 
-          base: header, repositories
-          repositories: 100
-          repositories_forks: no
-          repositories_affiliations: owner, collaborator
-          repositories_skipped: AjaniBilby/ajanibilby
-
-          plugin_introduction: yes
-          plugin_introduction_title: yes
-
-          plugin_languages: yes
-          plugin_languages_ignored: html, css, dockerfile, makefile, qmake, lex, cmake, shell, json
-          plugin_languages_details: lines, percentage
-          plugin_languages_sections: most-used, recently-used
-          plugin_languages_recent_load: 500
-          plugin_languages_indepth: yes
-          plugin_languages_threshold: 0.05%
-          plugin_languages_limit: 8
-
+          # Options
+          user: AjaniBilby
+          template: classic
+          base: header, activity, community, repositories, metadata
+          config_timezone: Australia/Sydney
+          plugin_achievements: yes
+          plugin_achievements_display: compact
+          plugin_achievements_secrets: yes
+          plugin_achievements_threshold: C
+          plugin_activity: yes
+          plugin_activity_days: 14
+          plugin_activity_filter: all
+          plugin_activity_limit: 5
+          plugin_activity_load: 300
+          plugin_activity_visibility: all
           plugin_habits: yes
-          plugin_habits_from: 500
+          plugin_habits_charts_type: classic
           plugin_habits_days: 14
           plugin_habits_facts: yes
-          plugin_habits_charts: no
-          config_timezone: Australia/Sydney
-
-          plugin_achievements: yes
-          plugin_achievements_threshold: B
-          plugin_achievements_secrets: yes
-          plugin_achievements_ignored: octonaut
-          plugin_achievements_limit: 0
-
+          plugin_habits_from: 200
+          plugin_habits_languages_limit: 8
+          plugin_habits_languages_threshold: 0%
+          plugin_languages: yes
+          plugin_languages_analysis_timeout: 15
+          plugin_languages_analysis_timeout_repositories: 7.5
+          plugin_languages_categories: markup, programming
+          plugin_languages_colors: github
+          plugin_languages_ignored: tml, css, dockerfile, makefile, qmake, lex, cmake, shell, json
+          plugin_languages_limit: 8
+          plugin_languages_other: yes
+          plugin_languages_recent_categories: markup, programming
+          plugin_languages_recent_days: 14
+          plugin_languages_recent_load: 300
+          plugin_languages_sections: most-used
+          plugin_languages_threshold: 0%
           plugin_lines: yes
-
-          plugin_notable: yes
-          plugin_notable_repositories: yes
-          config_order: base.header, introduction, base.repositories, habits, followup, languages, achievements, notable
+          plugin_lines_history_limit: 1
+          plugin_lines_repositories_limit: 4
+          plugin_lines_sections: base
