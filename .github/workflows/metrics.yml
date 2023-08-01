@@ -36,7 +36,7 @@ jobs:
           plugin_calendar: yes
           plugin_calendar_limit: 10
           plugin_habits: yes
-          plugin_habits_charts_type: graph
+          plugin_habits_charts_type: classic
           plugin_habits_days: 14
           plugin_habits_facts: yes
           plugin_habits_from: 200
@@ -63,3 +63,4 @@ jobs:
           plugin_notable: yes
           plugin_notable_from: organization
           plugin_notable_types: commit
+          repositories_forks: yes
