@@ -19,7 +19,7 @@
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                 <path fill-rule="evenodd" d="M10.5 7.75a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm1.43.75a4.002 4.002 0 01-7.86 0H.75a.75.75 0 110-1.5h3.32a4.001 4.001 0 017.86 0h3.32a.75.75 0 110 1.5h-3.32z"/>
                             </svg>
-                            2250 Commits
+                            2251 Commits
                         </div>
                         <div class="field">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
@@ -127,7 +127,7 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                         <path fill-rule="evenodd" d="M2.75 1.5a.25.25 0 00-.25.25v12.5c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V4.664a.25.25 0 00-.073-.177l-2.914-2.914a.25.25 0 00-.177-.073H2.75zM1 1.75C1 .784 1.784 0 2.75 0h7.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v9.586A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V1.75zm7 1.5a.75.75 0 01.75.75v1.5h1.5a.75.75 0 010 1.5h-1.5v1.5a.75.75 0 01-1.5 0V7h-1.5a.75.75 0 010-1.5h1.5V4A.75.75 0 018 3.25zm-3 8a.75.75 0 01.75-.75h4.5a.75.75 0 010 1.5h-4.5a.75.75 0 01-.75-.75z"/>
                                     </svg>
-                                    2.02m added, 1.81m removed
+                                    1.47m added, 1.25m removed
                                 </div>
                             </section>
                             <section>
@@ -170,20 +170,20 @@
             </section>
             <section class="column">
                 <h3 class="field">Most used languages</h3>
-                <small>estimation from 20.2mb of code in 3670 edited files across 1393 commits</small>
+                <small>estimation from 20.2mb of code in 3671 edited files across 1394 commits</small>
                 <svg class="bar" xmlns="http://www.w3.org/2000/svg" width="460" height="8">
                     <mask id="languages-bar">
                         <rect x="0" y="0" width="460" height="8" fill="white" rx="5"/>
                     </mask>
                     <rect mask="url(#languages-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
-                    <rect mask="url(#languages-bar)" x="0" y="0" width="315.38864292445874" height="8" fill="#f1e05a"/>
-                    <rect mask="url(#languages-bar)" x="315.38864292445874" y="0" width="35.97430338567013" height="8" fill="#185619"/>
-                    <rect mask="url(#languages-bar)" x="351.36294631012885" y="0" width="9.528704031161725" height="8" fill="#3178c6"/>
-                    <rect mask="url(#languages-bar)" x="360.8916503412906" y="0" width="0.8661727821353744" height="8" fill="#DA5B0B"/>
-                    <rect mask="url(#languages-bar)" x="361.7578231234259" y="0" width="0.580748622186334" height="8" fill="#ededed"/>
-                    <rect mask="url(#languages-bar)" x="362.3385717456123" y="0" width="0.526711631948093" height="8" fill="#3572A5"/>
-                    <rect mask="url(#languages-bar)" x="362.86528337756033" y="0" width="0.2742539235976342" height="8" fill="#e34c26"/>
-                    <rect mask="url(#languages-bar)" x="363.139537301158" y="0" width="96.86046269884201" height="8" fill="#ededed"/>
+                    <rect mask="url(#languages-bar)" x="0" y="0" width="315.38809207332656" height="8" fill="#f1e05a"/>
+                    <rect mask="url(#languages-bar)" x="315.38809207332656" y="0" width="35.974240553712825" height="8" fill="#185619"/>
+                    <rect mask="url(#languages-bar)" x="351.3623326270394" y="0" width="9.52868738852883" height="8" fill="#3178c6"/>
+                    <rect mask="url(#languages-bar)" x="360.8910200155682" y="0" width="0.8661712692963157" height="8" fill="#DA5B0B"/>
+                    <rect mask="url(#languages-bar)" x="361.7571912848645" y="0" width="0.5807476078630754" height="8" fill="#ededed"/>
+                    <rect mask="url(#languages-bar)" x="362.33793889272755" y="0" width="0.5267107120046984" height="8" fill="#3572A5"/>
+                    <rect mask="url(#languages-bar)" x="362.8646496047323" y="0" width="0.27425344459153267" height="8" fill="#e34c26"/>
+                    <rect mask="url(#languages-bar)" x="363.1389030493238" y="0" width="96.86109695067617" height="8" fill="#ededed"/>
                 </svg>
                 <div class="field center horizontal-wrap fill-width">
                     <div class="field center no-wrap language">
@@ -778,7 +778,7 @@
                                 <div class="title">
                                     <span class="prefix"></span>
                                     Inspirer
-                                    <span class="gh">ranked 2.47m out of 46m repositories</span>
+                                    <span class="gh">ranked 2.47m out of 52m repositories</span>
                                     <div class="value-wrapper">
                                         <div class="value">3</div>
                                     </div>
@@ -819,7 +819,7 @@
                                 <div class="title">
                                     <span class="prefix"></span>
                                     Maintainer
-                                    <span class="gh">ranked 2.45m out of 46m repositories</span>
+                                    <span class="gh">ranked 2.46m out of 52m repositories</span>
                                     <div class="value-wrapper">
                                         <div class="value">6</div>
                                     </div>
@@ -921,7 +921,7 @@
             </section>
             <footer>
                 <span>These metrics do not include all private contributions</span>
-                <span>Last updated 3 Aug 2023, 21:33:13 (timezone Australia/Sydney) with lowlighter/metrics@3.34.0-beta</span>
+                <span>Last updated 3 Aug 2023, 22:01:44 (timezone Australia/Sydney) with lowlighter/metrics@3.34.0-beta</span>
             </footer>
         </div>
         <div xmlns="http://www.w3.org/1999/xhtml" id="metrics-end"></div>
